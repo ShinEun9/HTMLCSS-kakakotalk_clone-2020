@@ -1,6 +1,6 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .user-component,
@@ -52,4 +52,15 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.a {
+  display: flex;
+  align-items: center;
+}
+
+.a span {
+  margin-top: 7.5px;
+  margin-left: 5px;
+  color: red;
 }
