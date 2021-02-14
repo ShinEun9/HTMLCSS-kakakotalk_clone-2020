@@ -1,6 +1,5 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 500vh;
 }
 
 #chat-screen .alt-header,
@@ -20,22 +19,12 @@
   top: 10px;
   z-index: 1;
 }
-@keyframes fadeIn {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
+
 .main-chat {
-  margin-top: 180px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -51,6 +40,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: leftToRight 1s ease-in-out;
 }
 .message-row img {
   width: 50px;
@@ -66,6 +56,7 @@
 .message__info {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 5px;
 }
 
 .message__bubble {
@@ -85,6 +76,7 @@
 
 .message-row--own {
   justify-content: flex-end;
+  animation: rightToLeft 1s ease-in-out;
 }
 
 .message-row--own .message__bubble {
@@ -179,4 +171,34 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+@keyframes transparent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
 }

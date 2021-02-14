@@ -1,8 +1,15 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
 }
 
+.user-component:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
 .user-component,
 .user-component__column:first-child {
   display: flex;
@@ -63,4 +70,15 @@
   margin-top: 7.5px;
   margin-left: 5px;
   color: red;
+}
+
+.user-component__column__music {
+  padding: 10px 25px;
+  border: 2px solid green;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.user-component__column__music i {
+  color: green;
 }

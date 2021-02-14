@@ -2,10 +2,11 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  background-color: white;
+  z-index: 3;
 }
 
 .status-bar__column {
